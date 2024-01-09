@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container m-4">
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h1 class="card-title">Sign Up</h1>
+                <form action="home.html" class="mx-auto" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                                <input type="text" id="fnametext" class="form-control" name="firstName" required placeholder="First name"/>
+                                <!-- <label for="fnametext">First name</label> -->
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                                <input type="text" id="lnametext" class="form-control" name="lastName" required placeholder="Last name "/>
+                                <!-- <label for="lnametext">Last name</label> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-outline">
+                            <input type="email" id="email" class="form-control" name="email" required placeholder="Email address"/>
+                            <!-- <label for="email">Email</label> -->
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="form-outline">
+                            <input type="password" id="password" class="form-control" name="password" required placeholder="Password"/>
+                            <!-- <label for="password">Password</label> -->
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <div class="col">
+                        <!-- Simple link -->
+                        <a href="http://127.0.0.1:3000/login.html">Existing User</a>
+                      </div>
+                </form>
+
+            </div>
+
+            <hr class="my-4">
+    <!-- <div class="or">Or</div> -->
+    <div class="text-center">
+        <p>or sign up with:</p>
+        <div class="social-icons">
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <a href="https://www.google.com" target="_blank" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <a href="https://www.github.com" target="_blank" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+        </div>
+        <!-- <div class="row row_0 p-2 mx-1">
+            <button type="submit" class="btn btn-primary" id="submitbtn">Submit</button>
+    
+            
+        </div> -->
+    </div>
+    
+    
+
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

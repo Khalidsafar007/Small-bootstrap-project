@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="mcu">
+    <div class="container mt-3" id="alerttab">
+      <!-- Cookie Alert -->
+      <div
+        id="cookie-alert"
+        class="alert alert-success alert-dismissible fade show"
+        role="alert"
+      >
+        <strong>Cookies Accepted!</strong> Thank you for accepting our cookies.
+        We use cookies to enhance your experience.
+        <button
+          type="button"
+          class="btn-close"
+          id="alertbtn"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        >
+          X
+        </button>
+      </div>
+
+      <!-- Your website content goes here -->
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark mt-0">
+      <a class="navbar-brand" href="#">
+        <img src="logo.webp" alt="Your Logo" class="img-fluid" style="height:60px; width:90px;" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              PHASES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">PHASE 1</a>
+              <a class="dropdown-item" href="#">PHASE 2</a>
+              <a class="dropdown-item" href="#">PHASE 3</a>
+              <a class="dropdown-item" href="#">PHASE 4</a>
+              <a class="dropdown-item" href="#">PHASE 5</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"
+              >About <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item log mr-0">
+            <a class="nav-link" href="login 1.html">
+              <i class="fas fa-user"></i> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container  d-flex justify-contents-center">
+      <h1 id="switch">Switch Content ?</h1>
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="p-3"></div>
+    <div class="container mt-5 mx-auto" id="mcuContent">
+      <h1 id="head1">MARVEL CINEMATIC UNIVERSE</h1>
+      <div class="introcontent mx-auto py-3" id="log">
+        <h1>What is MCU?</h1>
+        <p>
+          The Marvel Cinematic Universe (MCU) is an American media franchise and
+          shared universe centered on a series of superhero films produced by
+          Marvel Studios. The films are based on characters that appear in
+          American comic books published by Marvel Comics. The franchise also
+          includes television series, short films, digital series, and
+          literature. The shared universe, much like the original Marvel
+          Universe in comic books, was established by crossing over common plot
+          elements, settings, cast, and characters.
+        </p>
+      </div>
+
+      <div class="p-5"></div>
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="avg2.jpg" class="d-block w-100" alt="Carousel Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="avg1.jpg" class="d-block w-100" alt="Carousel Image 2" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExample"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExample"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="p-3"></div>
+      <!-- tabs -->
+      <div class="container justify-contents-center" id="myTabs">
+        <div class="w-100">
+          <div class="scroller scroller-left float-start mt-2">
+            <i class="bi bi-caret-left-fill"></i>
+          </div>
+          <div class="scroller scroller-right float-end mt-2">
+            <i class="bi bi-caret-right-fill"></i>
+          </div>
+          <div class="wrapper-nav">
+            <nav class="nav nav-tabs list mt-2" id="myTab" role="tablist">
+              <a
+                class="nav-item nav-link pointer active"
+                data-bs-toggle="tab"
+                data-bs-target="#tab1"
+                role="tab"
+                aria-controls="public"
+                aria-selected="true"
+                >Phase 1</a
+              >
+              <a
+                class="nav-item nav-link pointer"
+                data-bs-target="#tab2"
+                role="tab"
+                data-bs-toggle="tab"
+                >Phase 2</a
+              >
+              <a
+                class="nav-item nav-link pointer"
+                data-bs-target="#tab3"
+                role="tab"
+                data-bs-toggle="tab"
+                >Phase 3</a
+              >
+              <a
+                class="nav-item nav-link pointer"
+                data-bs-target="#tab4"
+                role="tab"
+                data-bs-toggle="tab"
+                >Phase 4</a
+              >
+              <a
+                class="nav-item nav-link pointer"
+                data-bs-target="#tab5"
+                role="tab"
+                data-bs-toggle="tab"
+                >Phase 5</a
+              >
+            </nav>
+          </div>
+          <div class="tab-content p-3" id="myTabContent">
+            <div
+              role="tabpanel"
+              class="tab-pane fade active show mt-2"
+              id="tab1"
+              aria-labelledby="public-tab"
+            >
+              <div class="phse">
+                <h2>2008-2012</h2>
+                <ol>
+                  <li>Iron Man</li>
+                  <li>The Incredible Hulk</li>
+                  <li>Iron Man 2</li>
+                  <li>Thor</li>
+                  <li>Captain America: The First Avenger</li>
+                  <li>The Avengers</li>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade mt-2"
+              id="tab2"
+              role="tabpanel"
+              aria-labelledby="group-dropdown2-tab"
+            >
+              <div class="phse">
+                <h2>2013 to 2015</h2>
+                <ol>
+                  <li>Iron Man 3</li>
+                  <li>Thor: The Dark World</li>
+                  <li>Captain America: The Winter Soldier</li>
+                  <li>Guardians of the Galaxy</li>
+                  <li>Captain America: The First Avenger</li>
+                  <li>Avengers: Age of Ultron</li>
+                  <li>Ant-Man</li>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade mt-2"
+              id="tab3"
+              role="tabpanel"
+              aria-labelledby="group-dropdown2-tab"
+            >
+              <div class="phse">
+                <h2>2016 to 2019</h2>
+                <ol>
+                  <li>Captain America: Civil War</li>
+                  <li>Doctor Strange</li>
+                  <li>Guardians of the Galaxy Vol 2</li>
+                  <li>Spider-Man: Homecoming</li>
+                  <li>Thor: Ragnarok</li>
+                  <li>Black Panther</li>
+                  <li>Avengers: Infinity War</li>
+                  <li>Ant-Man and the Wasp</li>
+                  <li>Captain Marvel</li>
+                  <li>Avengers: Endgame</li>
+                  <li>Spider-Man: Far From Home</li>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade mt-2"
+              id="tab4"
+              role="tabpanel"
+              aria-labelledby="group-dropdown2-tab"
+            >
+              <div class="phse">
+                <h2>2020 to 2022</h2>
+                <ol>
+                  <li>WandaVision</li>
+                  <li>The Falcon and the Winter Soldier</li>
+                  <li>Black Widow</li>
+                  <li>Loki season 1</li>
+                  <li>What If...?</li>
+                  <li>Shang-Chi and the Legend of the Ten Rings</li>
+                  <li>Eternals</li>
+                  <li>Hawkeye</li>
+                  <li>Spider-Man: No Way Home</li>
+                  <li>Moon Knight</li>
+                  <li>Doctor Strange in the Multiverse of Madness</li>
+                  <li>Ms Marvel</li>
+                  <li>Thor: Love and Thunder</li>
+                  <li>She-Hulk: Attorney At Law</li>
+                  <li>Werewolf By Night</li>
+                  <li>Black Panther: Wakanda Forever</li>
+                  <li>The Guardians of the Galaxy Holiday Special</li>
+                </ol>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade mt-2"
+              id="tab5"
+              role="tabpanel"
+              aria-labelledby="group-dropdown2-tab"
+            >
+              <div class="phse">
+                <h2>2023 to 2025</h2>
+                <ol>
+                  <li>Ant-Man and The Wasp: Quantumania</li>
+                  <li>Guardians of the Galaxy Vol 3</li>
+                  <li>Secret Invasion</li>
+                  <li>Loki season 2</li>
+                  <li>The Marvels</li>
+                  <li>What If...? season 2</li>
+                  <li>Echo</li>
+                  <li>Deadpool 3</li>
+                  <li>Agatha: Darkhold Diaries</li>
+                  <li>Daredevil: Born Again</li>
+                  <li>Captain America: New World Order</li>
+                  <li>Ironheart</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-3"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">MCU Terms And Conditions</h4>
+            <button
+              type="button"
+              class="close"
+              id="termbtn"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <p>Welcome to the Marvel Cinematic Universe (MCU) website!</p>
+            <p>
+              By accessing or using our website, you agree to be bound by these
+              Terms and Conditions. I f you do not agree to these Terms and
+              Conditions, you may not access or use our website.
+            </p>
+
+            <ol>
+              <li>Definitions</li>
+              In these Terms and Conditions, the following terms have the
+              following meanings: "We," "us," or "our" means Marvel Studios,
+              LLC, a subsidiary of The Walt Disney Company, and its affiliates.
+              "You" means the individual or entity accessing or using our
+              website. "Content" means any text, images, videos, audio, or other
+              materials that are made available on our website. "Website" means
+              our website located at [website address].
+              <li>Permitted Use of the Website</li>
+              You may use our website for your personal, non-commercial use
+              only. You may not use our website for any commercial purpose,
+              including, but not limited to, advertising, solicitation, or the
+              sale of goods or services.
+              <li>Restrictions on Use of Content</li>
+              The Content on our website is protected by copyright, trademark,
+              and other intellectual property laws. You may not copy,
+              distribute, modify, transmit, display, perform, create derivative
+              works from, or otherwise exploit the Content without our prior
+              written consent.
+              <li>User Conduct</li>
+              You agree to use our website in a responsible and lawful manner.
+              You agree not to use our website to:<br />
+              Upload, post, or transmit any Content that is illegal, harmful,
+              threatening, abusive, harassing, tortious, defamatory, vulgar,
+              obscene, libelous, invasive of another's privacy, hateful, or
+              racially, ethnically, or otherwise objectionable. Upload, post, or
+              transmit any Content that contains any viruses, Trojan horses,
+              worms, or other harmful or disruptive code. Impersonate any person
+              or entity, or falsely state or otherwise misrepresent your
+              affiliation with a person or entity. Interfere with or disrupt our
+              website or servers, or networks connected to our website. Violate
+              any applicable laws or regulations.
+              <li>Links to Third-Party Websites</li>
+              Our website may contain links to third-party websites. We are not
+              responsible for the content or privacy practices of these
+              third-party websites. You should review the terms and conditions
+              and privacy policies of these third-party websites before you use
+              them.
+              <li>Disclaimer of Warranties</li>
+              OUR WEBSITE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE
+              MAKE NO WARRANTIES, EXPRESS OR IMPLIED, ABOUT THE OPERATION OF OUR
+              WEBSITE OR THE CONTENT. YOU EXPRESSLY AGREE THAT YOUR USE OF OUR
+              WEBSITE IS AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY
+              LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING,
+              BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+              FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT
+              WARRANT THAT OUR WEBSITE WILL BE UNINTERRUPTED OR ERROR-FREE. WE
+              DO NOT WARRANT THAT THE CONTENT ON OUR WEBSITE IS ACCURATE,
+              RELIABLE, OR COMPLETE.
+              <li>Limitation of Liability</li>
+              WE WILL NOT BE LIABLE FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED
+              TO, DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
+              EXEMPLARY DAMAGES, ARISING OUT OF OR IN CONNECTION WITH YOUR USE
+              OF OUR WEBSITE OR THE CONTENT.
+              <li>Indemnification</li>
+              You agree to indemnify, defend, and hold harmless us, our
+              affiliates, and our officers, directors, employees, agents,
+              successors, and assigns from and against any and all claims,
+              liabilities, damages, losses, costs, expenses, and fees (including
+              reasonable attorneys' fees) arising out of or in connection with
+              your use of our website or your violation of these Terms and
+              Conditions.
+              <li>Termination</li>
+              We may terminate your access to our website at any time, for any
+              reason, without notice. We may also terminate your access to our
+              website if we believe that you have violated any of these Terms
+              and Conditions.
+              <li>Governing Law</li>
+              These Terms and Conditions are governed by and construed in
+              accordance with the laws of the State of California, without
+              regard to its conflict of laws principles.
+              <li>Changes to Terms and Conditions</li>
+              We may change these Terms and Conditions at any time by posting
+              the updated Terms and Conditions on our website. You are
+              responsible for reviewing the Terms and Conditions periodically to
+              stay informed of any changes. Your continued use of our website
+              after we post the updated Terms and Conditions constitutes your
+              agreement to be bound by the updated Terms and Conditions.
+              <li>Entire Agreement</li>
+              These Terms and Conditions constitute the entire agreement between
+              you and us with respect to your Sources.
+            </ol>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 justify-contents-center hidden" id="dcContent">
+      <h1 id="head1">DC Comics</h1>
+      <div class="introcontent mx-auto py-3">
+        <h1>What is DC?</h1>
+        <p>
+          DC, short for Detective Comics, is a renowned American comic book
+          publisher and a key player in the global comic book industry.
+          Established in 1934, it has given life to iconic superheroes like
+          Superman, Batman, Wonder Woman, The Flash, and Aquaman, each with
+          their unique abilities and compelling storylines. DC's characters
+          coexist in a shared universe known as the DC Universe, forming teams
+          like the Justice League. The company has expanded beyond comics into
+          various media, including television, film, and video games, with the
+          DC Extended Universe featuring prominently on the big screen. DC's
+          cultural impact extends far beyond its origins, influencing
+          generations with its diverse array of characters and engaging
+          narratives across multiple genres.
+        </p>
+      </div>
+      <div class="p-5"></div>
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="dc2.jpg" class="d-block w-100" alt="Carousel Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="dc1.jpg" class="d-block w-100" alt="Carousel Image 2" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExample"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExample"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Comics, All rights reserved.</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script>
+          // Show the modal
+          $("#myModal").modal("show");
+
+          
+          // const changeBtn = document.getElementById("changeBtn");
+          // changeBtn.addEventListener("click", function (event) {
+          //   const dcContent = document.getElementById("dcContent");
+          //   dcContent.classList.remove("hidden");
+          //   const mcuContent = document.getElementById("mcuContent");
+          //   mcuContent.classList.add("hidden");
+          // });
+    </script>
+else {
+  $('#dcContent').addClass('hidden');
+  $('#mcuContent').removeClass('hidden');
+  $('body').addClass('mcu');
+  $('body').removeClass('dc');
+  localStorage.setItem('mode', 'mcu');
+};   -->
+<script src="switch.js"></script>
+</body>
+</html>

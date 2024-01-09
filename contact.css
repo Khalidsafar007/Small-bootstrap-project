@@ -1,0 +1,150 @@
+/* contact.css */
+
+.mcu{
+    
+  /* min-height: 1rem; */
+  background-image: url("avg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /* backdrop-filter: blur(2px); */
+}
+
+#switch{
+color: #ffffff;
+font-weight:900;
+background-color: black;
+}
+.dc{
+  
+/* min-height: 1rem; */
+background-image: url("dc.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+/* backdrop-filter: blur(2px); */
+}
+
+ 
+.navbar {
+  margin-bottom: 20px;
+  background-color: #2b3c7270;
+   /* Adjust the padding to decrease the height */
+}
+
+  /* .navbar-brand span{
+    font-family: 'Bangers', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    color: rgb(224, 220, 214);
+}
+   */
+   /* h1{
+    font-family: 'Bangers', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    color: rgb(224, 220, 214);
+} */
+  .content {
+    flex: 1;
+    /* position: relative; */
+    /* margin-top: 40%; */
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   width: fit-content;
+   border-radius: 10px;
+   margin-bottom: 10%;
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    display: -ms-flexbox!important;
+    justify-content: flex-end;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+  }
+  
+  .footer {
+    background: rgba(0, 0, 0, 0.6);
+
+    /* background-color: #343a40; */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Customize the form styles as needed */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  #head1{
+    font-family: 'Bangers', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    color: rgb(224, 220, 214);
+  }
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
